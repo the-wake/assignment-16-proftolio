@@ -1,0 +1,257 @@
+body {
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    width: 99.8%;
+}
+
+h1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-weight: bolder;
+    background: rgb(176,176,176);
+    background: linear-gradient(90deg, rgba(176,176,176,1) 0%, rgba(179,179,179,1) 39%, rgba(231,231,231,1) 100%);
+    padding: 30px;
+    border-top-right-radius: 10px;
+}
+
+h2 {
+    color: black;
+    font-size: 32px;
+    padding: 16px;
+    font-weight: bolder;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 16px;
+    font-weight: bolder;
+}
+
+h4 {
+    display: inline;
+    position: relative;
+    left: 40px;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+h5 {
+    color: black;
+    font-size: 22px;
+    padding: 12px 16px 6px 28px;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px 15px;
+}
+
+a h2 {
+    color: #0000FF;
+}
+
+header {
+    flex: 1 1 100px;
+}
+
+nav {
+    flex: 1 1 20px;
+    background: rgb(185, 218, 218);
+    background: linear-gradient(90deg, rgb(184, 223, 223) 0%, rrgb(139, 223, 223)100%);
+    padding: 20px;
+    margin: 2px 0px 0px 0px;
+    border-bottom-right-radius: 10px;
+}
+
+.navbar {
+    display: inline;
+    float: right;
+}
+
+nav a {
+    color: grey;
+    font-size: 19px;
+    font-weight: bolder;
+    padding: 12px;
+}
+
+.about {
+    display: flex;
+    background: rgb(185, 218, 218);
+    background: linear-gradient(90deg, rgb(184, 223, 223) 0%, rrgb(139, 223, 223)100%);
+    margin: 8px 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+#profile-container {
+    float: left;
+    max-width: 300px;
+    flex: 100px;
+    margin: 20px;
+}
+
+#profile-pic {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.about-me {
+    flex: 3;
+    margin: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.wrapper {
+    background: rgb(185, 218, 218);
+    background: linear-gradient(90deg, rgb(184, 223, 223) 0%, rrgb(139, 223, 223)100%);
+    padding: 1px 8px 8px 8px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: auto;
+    overflow: auto;
+}
+
+main {
+    display: inline-block;
+    width: 65%;
+}
+
+main section {
+    background-color: whitesmoke;
+    height: fit-content;
+    min-height: 225px;
+    margin: 15px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main section h2, aside h2 {
+    border-radius: 7px;    
+}
+
+.repo-link {
+    position: relative;
+    right: 15px;
+    float: right;
+}
+
+.project-img {
+    float: left;
+    width: 250px;
+    padding: 25px 20px 8px 20px;
+}
+
+aside {
+    float: right;
+    width: 32%;
+}
+
+.right {
+    background-color: whitesmoke;
+    height: 100%;
+    margin: 15px 10px;
+    border-radius: 10px;
+}
+
+.services {
+    padding-bottom: 10px;
+}
+
+.contact {
+    margin: 0 auto;
+    max-width: 400px;
+    padding-bottom: 8px;
+}
+
+.contact p {
+    margin: 0 14px 0 14px;
+}
+
+.at {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+.contact p {
+    padding: 0 4px 4px 4px;
+}
+
+.service {
+    margin: 0 0 20px 0;
+}
+
+footer {
+    background: rgb(176,176,176);
+    background: linear-gradient(90deg, rgba(176,176,176,1) 0%, rgba(179,179,179,1) 39%, rgba(231,231,231,1) 100%);
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer div {
+    line-height: 40px;
+}
+
+main section:hover .project-img {
+    width: 275px;
+    padding: 17px;
+}
+
+@media screen and (max-width: 992px) {
+    .fluff {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .wrapper {
+        display: block;
+        padding: 1px;
+    }
+    .about {
+        flex-direction: column;
+    }
+    #profile-container {
+        float: none;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-me {
+        width: 100;
+    }
+    main {
+        width: auto;
+    }
+    aside {
+        width: auto;
+    }
+    .right {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;}
+    .contact {
+        margin: 10px ;
+    }
+    #email, #ssn {
+        width: 262px;
+    }
+}
